@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  display: inline-block;
+  appearance: none;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1;
+  background-color: transparent;
+}
