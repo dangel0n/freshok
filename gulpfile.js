@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const svgSprite = require('gulp-svg-sprite');
 const fileInclude = require('gulp-file-include');
+const cheerio = require('gulp-cheerio');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -27,9 +28,6 @@ const htmlInclude = () => {
     .pipe(browserSync.stream());
 }
 
-
-
-
 function styles() {
   return src('app/scss/style.scss')
     .pipe(scss({ outputStyle: 'compressed' }))
@@ -45,6 +43,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -71,6 +70,15 @@ function images() {
 
 function svgSprites() {
   return src('app/images/icons/*.svg')
+    .pipe(cheerio({
+      run: ($) => {
+        $("[fill]").removeAttr("fill"); // очищаем цвет у иконок по умолчанию, чтобы можно было задать свой
+        $("[stroke]").removeAttr("stroke"); // очищаем, если есть лишние атрибуты строк
+        $("[style]").removeAttr("style"); // убираем внутренние стили для иконок
+      },
+      parserOptions: { xmlMode: true },
+    })
+    )
     .pipe(
       svgSprite({
         mode: {

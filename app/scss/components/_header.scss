@@ -90,6 +90,7 @@
   background-color: $green-900;
   position: sticky;
   top: 0;
+  z-index: 500;
 
   &__content {
     display: flex;
@@ -194,7 +195,7 @@
     cursor: pointer;
 
     svg {
-      transition: all .3s;
+      transition: all 3s;
     }
 
     &:focus {
@@ -202,7 +203,6 @@
 
       svg {
         @include recolor(#fff);
-
       }
     }
 
@@ -211,7 +211,6 @@
 
       svg {
         @include recolor(#fff);
-
       }
     }
 
@@ -251,12 +250,14 @@
     height: 50px;
     display: inline-block;
     position: relative;
+    border-radius: 3px;
     transition: all 0.3s;
 
     svg {
       position: relative;
       left: 8px;
       top: 10px;
+      filter: invert(100%) sepia(14%) saturate(0%) hue-rotate(79deg) brightness(101%) contrast(101%);
       transition: all 0.3s;
     }
 
@@ -276,45 +277,6 @@
       }
     }
   }
-
-  // .user {
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     background-image: url(.././images/icons/user-link.svg);
-  //     width: 100%;
-  //     height: 100%;
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //   }
-  // }
-
-  // .favorite {
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 100%;
-  //     background-image: url(.././images/icons/favorite-link.svg);
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //   }
-  // }
-
-  // .cart {
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 100%;
-  //     background-image: url(.././images/icons/cart-link.svg);
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //   }
-  // }
 
   &__num {
     position: absolute;

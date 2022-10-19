@@ -42,6 +42,7 @@
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
+    transition: all 0.3s;
 
     &:focus {
       box-shadow: 0px 0px 0px 4px #E0EDCF;
@@ -54,6 +55,7 @@
     &:active {
       background: #63A60E;
       color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 0px 4px transparent;
     }
   }
 
@@ -106,9 +108,11 @@
     display: block;
     width: 32px;
     height: 32px;
+    transition: 0.3s;
 
     svg {
-      transition: all 0.3s;
+      filter: invert(100%) sepia(14%) saturate(0%) hue-rotate(79deg) brightness(101%) contrast(101%);
+      transition: all 3s;
     }
 
     &:focus {
@@ -123,7 +127,7 @@
       box-shadow: none;
 
       svg {
-        filter: invert(4%) sepia(6%) saturate(761%) hue-rotate(36deg) brightness(98%) contrast(91%);
+        filter: invert(91%) sepia(47%) saturate(125%) hue-rotate(26deg) brightness(97%) contrast(92%);
       }
     }
   }
