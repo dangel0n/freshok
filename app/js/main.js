@@ -1,4 +1,4 @@
-$(function name(params) {
+$(function () {
   
   $('.hero__slider').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/icon-arrow-left.svg" alt=""></button>',
@@ -6,6 +6,15 @@ $(function name(params) {
     fade: true,
     autoplay: true,
     autoplaySpeed: 7000,
-  })
+  });
+
+  $(".rating__star").rateYo({
+    numStars: 1,
+    readOnly: true,
+    normalFill: "#FFB800",
+    starWidth: "16px"
+  });
+
+  var mixer = mixitup('.top__catalog');
 
 })

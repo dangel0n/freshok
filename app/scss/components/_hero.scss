@@ -1,8 +1,9 @@
 .hero {
+  margin-top: 160px;
 
   &__slide {
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,13 +60,12 @@
 }
 
 .advantages {
-
+  height: 146px;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #f6f6f6;
-  padding-top: 50px;
-  padding-bottom: 30px;
 
   .scooter::before {
     background-image: url(.././images/icons/scooter.svg);
@@ -82,10 +82,10 @@
   &__item {
     padding-left: 75px;
     position: relative;
-    margin-right: 75px;
+    margin-right: 65px;
     max-width: 264px;
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
 
@@ -102,9 +102,12 @@
 
   &__title {
     font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
   }
 
   &__text {
+    font-weight: 400;
     color: $dark-500;
   }
 }

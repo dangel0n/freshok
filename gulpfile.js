@@ -7,6 +7,7 @@ const imagemin = require('gulp-imagemin');
 const svgSprite = require('gulp-svg-sprite');
 const fileInclude = require('gulp-file-include');
 const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -18,6 +19,7 @@ function browsersync() {
     notify: false
   })
 }
+
 const htmlInclude = () => {
   return src(['app/html/*.html'])
     .pipe(fileInclude({
@@ -44,6 +46,8 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/rateyo/src/jquery.rateyo.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -72,13 +76,14 @@ function svgSprites() {
   return src('app/images/icons/*.svg')
     .pipe(cheerio({
       run: ($) => {
-        $("[fill]").removeAttr("fill"); // очищаем цвет у иконок по умолчанию, чтобы можно было задать свой
-        $("[stroke]").removeAttr("stroke"); // очищаем, если есть лишние атрибуты строк
-        $("[style]").removeAttr("style"); // убираем внутренние стили для иконок
+        $("[fill]").removeAttr("fill");
+        $("[stroke]").removeAttr("stroke");
+        $("[style]").removeAttr("style");
       },
       parserOptions: { xmlMode: true },
     })
     )
+    .pipe(replace('&gt;', '>')) // боремся с заменой символа 
     .pipe(
       svgSprite({
         mode: {
