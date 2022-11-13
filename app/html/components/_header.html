@@ -1,20 +1,209 @@
 <header class="header">
+  <div class="menu-mob">
+    <div class="menu-mob__content">
+      <div class="menu-mob__top">
+        <a class="menu-mob__logo" href="#">
+          <img class="logo--mob" width="200" height="60" src="images/icons/mob-logo.svg" alt="Логотип">
+        </a>
+        <button class="menu-mob__close"></button>
+      </div>
+      <ul class="menu-mob__client">
+        <li class="menu-mob__client-item">
+          <a class="menu-mob__link enter" href="#">
+            Вход
+          </a>
+        </li>
+        <li class="menu-mob__client-item">
+          <a class="menu-mob__link registration" href="#">
+            Регистрация
+          </a>
+        </li>
+      </ul>
+      <button class="header__btn">
+        <svg width="24" height="17">
+          <use xlink:href="../images/sprite.svg#header-btn-decor"></use>
+        </svg>
+        Каталог товаров
+      </button>
+      <ul class="header__catalog-list">
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Овощи и фрукты
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Бакалея
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Молочные продукты
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Хлеб
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Мясо
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Колбаса
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Рыба
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Алкоголь
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Напитки
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Торты
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Мясо
+          </a>
+        </li>
+        <li class="header__catalog-item header__catalog-item--mob">
+          <a class="header__catalog-link header__catalog-link--mob" href="#">
+            Чай, кофе
+          </a>
+        </li>
+      </ul>
+      <div class="footer-top__wraper">
+        <ul class="footer-top__contacts">
+          <li class="footer-top__item">
+            <a class="footer-top__link phone" href="tel:+380501112233">
+              +38 050 111 22 33
+            </a>
+          </li>
+          <li class="footer-top__item location">
+            <a class="footer-top__link" href="#">
+              Запорожье, ул. Т.Г. Шевченко, 1
+            </a>
+          </li>
+        </ul>
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg width="31" height="32">
+                <use xlink:href="../images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg width="31" height="32">
+                <use xlink:href="../images/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg width="31" height="32">
+                <use xlink:href="../images/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <svg width="31" height="32">
+                <use xlink:href="../images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer-top__list">
+        <li class="footer-top__item">
+          <a class="footer-top__link" href="#">
+            О нас
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <a class="footer-top__link" href="#">
+            Оплата и доставка
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <a class="footer-top__link" href="#">
+            Отзывы
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <a class="footer-top__link" href="#">
+            Контакты
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <a class="footer-top__link" href="#">
+            Вакансии
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <a class="footer-top__link" href="#">
+            Новости
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <a class="footer-top__link" href="#">
+            Публичная оферта
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <a class="footer-top__link" href="#">
+            Акции
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="header-top">
     <div class="container">
       <div class="header-top__content">
+        <button class="burger-menu">
+          <span class="burger-menu__span"></span>
+        </button>
         <ul class="header-top__list">
           <li class="header-top__item-info ">
             <a href="#" class="header-top__link address">
-              АДРЕС И ВРЕМЯ ДОСТАВКИ
+              <svg width="32" height="21">
+                <use xlink:href="images/sprite.svg#address"></use>
+              </svg>
+              <span class="header-top__link-text">
+                АДРЕС И ВРЕМЯ ДОСТАВКИ
+              </span>
             </a>
           </li>
           <li class="header-top__item-info ">
             <a href="#" class="header-top__link phone">
-              ГОРЯЧАЯ ЛИНИЯ 24/7
+              <svg width="20px" height="20px">
+                <use xlink:href="images/sprite.svg#icon-tel"></use>
+              </svg>
+              <span class="header-top__link-text">
+                ГОРЯЧАЯ ЛИНИЯ 24/7
+              </span>
             </a>
           </li>
         </ul>
-        <ul class="header-top__list">
+        <ul class="header-top__list user-nav">
           <li class="header-top__item-nav">
             <a href="#" class="header-top__link">
               ДОСТАВКА
@@ -37,23 +226,98 @@
   <div class="container">
     <div class="header__content">
       <a class="logo" href="#">
-        <img class="logo" src="images/icons/logo.svg" alt="Логотип">
+        <img class="logo--big" width="200" height="60" src="images/icons/logo.svg" alt="Логотип">
+        <img class="logo--small" width="36" height="40" src="images/icons/logo-small.svg" alt="Логотип">
       </a>
-      <button class="header__btn">
-        Каталог продуктов
-      </button>
+      <div class="header__catalog">
+        <button class="header__btn">
+          <svg width="24" height="17">
+            <use xlink:href="../images/sprite.svg#header-btn-decor"></use>
+          </svg>
+          Каталог продуктов
+        </button>
+        <ul class="header__catalog-list">
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Овощи и фрукты
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Бакалея
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Молочные продукты
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Хлеб
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Мясо
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Колбаса
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Рыба
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Алкоголь
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Напитки
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Торты
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Мясо
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a class="header__catalog-link" href="#">
+              Чай, кофе
+            </a>
+          </li>
+        </ul>
+      </div>
       <form class="header__form">
         <button class="header__input-btn--search" type="submit">
           <svg width="20px" height="20px">
             <use xlink:href="images/sprite.svg#search"></use>
           </svg>
         </button>
-        <input class="header__input" type="text" placeholder="Найти в магазине ..." required>
+        <input class="header__input" type="search" placeholder="Найти в магазине ..." required>
         <button class="header__input-btn" type="submit">
           ПОИСК
         </button>
       </form>
       <ul class="user-nav">
+        <li class="user-nav__item">
+          <a class="user-nav__link search" href="#">
+            <svg width="32" height="28">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+          </a>
+        </li>
         <li class="user-nav__item">
           <a class="user-nav__link user" href="#">
             <svg width="32" height="28">

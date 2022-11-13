@@ -1,14 +1,8 @@
 .hero {
   margin-top: 160px;
 
-  &__slide {
-    width: 100%;
-    height: 60vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid !important;
-    align-content: center;
+  @media (max-width: $md) {
+    margin-top: 121px;
   }
 
   &__content {
@@ -28,6 +22,16 @@
     line-height: 1.3;
     text-transform: uppercase;
     color: $dark-500;
+
+    @media (max-width: $md) {
+      font-size: 40px;
+      font-weight: 800;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 20px;
+      font-weight: 700;
+    }
   }
 
   &__span {
@@ -57,15 +61,84 @@
   .slick-next {
     right: 60px;
   }
+
+  &__item {
+    width: 100%;
+    height: 55vh;
+    height: 60vh;
+    display: grid !important;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__btn {
+    font-weight: 400;
+    transition: all 0.3s;
+
+    &:focus {
+      box-shadow: 0px 0px 0px 4px #E0EDCF;
+      border-radius: 6px;
+    }
+
+    &:hover {
+      background-color: #4D810C;
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: $sm) {
+      font-size: 14px;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    li {
+      line-height: 0;
+      margin-right: 12px;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border: 1px solid $silver-600;
+      border-radius: 50%;
+
+      button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    .slick-active {
+      background-color: $green-900;
+      border: 1px solid $green-900;
+    }
+  }
 }
 
 .advantages {
-  height: 146px;
   width: 100%;
+  padding: 50px 15px 30px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f6f6f6;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: none;
+  }
 
   .scooter::before {
     background-image: url(.././images/icons/scooter.svg);
@@ -84,9 +157,19 @@
     position: relative;
     margin-right: 65px;
     max-width: 264px;
+    width: 100%;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @media (max-width: $lg) {
+      margin-right: 0;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &::before {

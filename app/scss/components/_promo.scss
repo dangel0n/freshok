@@ -3,6 +3,10 @@
   background-color: $silver-100;
   padding: 72px 0;
 
+  @media (max-width: $sm) {
+     padding: 48px 0;
+    }
+
   &__filter {
     display: flex;
     justify-content: center;
@@ -21,7 +25,22 @@
     text-transform: uppercase;
     color: $dark-500;
     margin-bottom: 48px;
+    outline: transparent;
     cursor: pointer;
+    transition: all 0.3s;
+
+    &:focus {
+      box-shadow: 0px 0px 0px 3px #e0edcf;
+      border-radius: 3px;
+    }
+
+    &:hover {
+      color: $green-900;
+    }
+
+    &:active {
+      box-shadow: 0px 0px 0px 3px rgb(0 0 0 / 0%);
+    }
   }
 
   &__product {
@@ -29,12 +48,29 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     margin-bottom: 48px;
+
+    @media (max-width: $xl) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    @media (max-width: $lg) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+
+    @media (max-width: $sm) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 15px;
+      margin-bottom: 25px;
+    }
   }
 
   &__product-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     padding: 12px;
     background-color: #fff;
     border: 1px solid $silver-600;
@@ -57,6 +93,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 140%;
+    color: $dark-500;
   }
 
   &__product-wrapper {
@@ -65,9 +102,6 @@
     flex-wrap: wrap;
   }
 
-  .rating {
-    margin-top: 4px;
-  }
 
   &__new-price {
     margin-right: 10px;
@@ -78,7 +112,7 @@
     color: $dark-500;
   }
 
-  &__old-prie {
+  &__old-price {
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0.03em;
@@ -88,6 +122,27 @@
   &__btn {
     display: block;
     margin: 0 auto;
+    transition: all 0.3s;
+
+    &:focus {
+      box-shadow: 0px 0px 0px 4px #E0EDCF;
+      border-radius: 6px;
+    }
+
+    &:hover {
+      background-color: #4D810C;
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .badges {
+    position: absolute;
+    top: 13px;
+    left: 13px;
   }
 }
 
@@ -103,11 +158,11 @@
     margin: 0 auto;
   }
 
-  &__link{
+  &__link {
     opacity: 0.5;
     transition: all 0.5s;
 
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }
