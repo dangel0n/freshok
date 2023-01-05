@@ -1,0 +1,42 @@
+.breadcrumbs {
+  width: 100%;
+  background-color: $silver-100;
+  margin-top: 160px;
+ 
+
+  @media (max-width: $md) {
+      margin-top: 121px; 
+      overflow-x: scroll;
+    }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+  }
+
+  &__item:last-child{
+    position: relative;
+    opacity: 0.8;
+  }
+
+  &__item:last-child::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    top: 5px;
+    left: -9px;
+    background-image: url(./../images/icons/icon-arrow-right.svg);
+    background-size: cover;
+  }
+
+  &__link {
+    margin-right: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $dark-500;
+    white-space: nowrap;
+  }
+}

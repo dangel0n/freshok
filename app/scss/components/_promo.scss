@@ -4,8 +4,8 @@
   padding: 72px 0;
 
   @media (max-width: $sm) {
-     padding: 48px 0;
-    }
+    padding: 48px 0;
+  }
 
   &__filter {
     display: flex;
@@ -102,7 +102,6 @@
     flex-wrap: wrap;
   }
 
-
   &__new-price {
     margin-right: 10px;
     font-weight: 600;
@@ -149,9 +148,18 @@
 .brands {
   padding: 72px 0;
 
+
+  @media (max-width: $md) {
+    overflow-x: scroll;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $md) {
+      width: 800px;
+    }
   }
 
   &__item {

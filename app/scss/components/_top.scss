@@ -137,9 +137,23 @@
 
   &__top-btn {
     cursor: pointer;
-
+    transition: all 0.3s;
+    outline: transparent;
     svg {
       filter: invert(96%) sepia(0%) saturate(173%) hue-rotate(176deg) brightness(83%) contrast(87%);
+    }
+
+    &:focus{
+      box-shadow: 0px 0px 0px 3px #E0EDCF;
+    }
+
+    &:hover{
+      filter: invert(64%) sepia(99%) saturate(1204%) hue-rotate(1deg) brightness(105%) contrast(103%);
+    }
+
+    &:active{
+      opacity: 0.5;
+      box-shadow: none;
     }
   }
 
