@@ -127,7 +127,7 @@
   background-color: $green-900;
   position: fixed;
   top: 0;
-  z-index: 500;
+  z-index: 100;
 
   .logo {
     flex-shrink: 0;
@@ -498,6 +498,7 @@
   &__content {
     background-color: #fff;
     width: calc(100% - 75px);
+    height: 100%;
   }
 
   &__top {

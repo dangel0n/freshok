@@ -4,130 +4,502 @@
       Каталог товаров
     </h1>
     <div class="catalog__inner">
-      <ul class="catalog-filters">
-        <li class="catalog-filters__item category">
-          <button class="catalog-filters__title category-btn" type="button">
-            Категории
-          </button>
-          <form class="category__form category__form--active" action="#">
-            <label class="category__label">
-              <input class="category__input" type="radio" name="category">
-              <span class="category__text">
-                Овощи и фрукты
-              </span>
-            </label>
-            <label class="category__label">
-              <input class="category__input" type="radio" name="category">
-              <span class="category__text">
-                Бакалея
-              </span>
-            </label>
-            <label class="category__label">
-              <input class="category__input" type="radio" name="category">
-              <span class="category__text">
-                Молочные продукты
-              </span>
-            </label>
-            <label class="category__label">
-              <input class="category__input" type="radio" name="category">
-              <span class="category__text">
-                Хлеб
-              </span>
-            </label>
-            <label class="category__label">
-              <input class="category__input" type="radio" name="category">
-              <span class="category__text">
-                Мясо
-              </span>
-            </label>
-            <label class="category__label">
-              <input class="category__input" type="radio" name="category">
-              <span class="category__text">
-                Колбасаы
-              </span>
-            </label>
-            <label class="category__label">
-              <input class="category__input" type="radio" name="category">
-              <span class="category__text">
-                Рыба
-              </span>
-            </label>
-            <label class="category__label">
-              <input class="category__input" type="radio" name="category">
-              <span class="category__text">
-                Алкоголь
-              </span>
-            </label>
-          </form>
-        </li>
-        <li class="catalog-filters__item offers">
-          <button class="catalog-filters__title offers-btn" type="button">
-            Предложения
-          </button>
-          <form class="offers__form" action="#">
-            <label class="offers__label">
-              <input class="offers__input" type="checkbox">
-              <span class="offers__checkbox"></span>
-              <span class="offers__text">
-                Со скидкой
-              </span>
-            </label>
-            <label class="offers__label">
-              <input class="offers__input" type="checkbox">
-              <span class="offers__checkbox"></span>
-              <span class="offers__text">
-                Новинка
-              </span>
-            </label>
-            <label class="offers__label">
-              <input class="offers__input" type="checkbox">
-              <span class="offers__checkbox"></span>
-              <span class="offers__text">
-                Хит
-              </span>
-            </label>
-          </form>
-        </li>
-        <li class="catalog-filters__item filter-price">
-          <button class="catalog-filters__title filter-price-btn" type="button">
-            Предложения
-          </button>
-          <form class="filter-price__form" action="#">
-            <label class="filter-price__label">
-              <div class="filter-price__box">
-                от
-                <input class="filter-price__from" type="text">
-                ₽
-              </div>
-              <div class="filter-price__box">
-                до
-                <input class="filter-price__to" type="text">
-                ₽
-              </div>
-            </label>
-            <input class="filter-price__input" type="text">
-          </form>
-      </ul>
+      <div class="catalog__wraper">
+        <ul class="catalog-filters">
+          <li class="catalog-filters__item category">
+            <button class="catalog-filters__close"></button>
+            <button class="catalog-filters__title category-btn show" type="button">
+              Категории
+            </button>
+            <form class="category__form category__form--active" action="#">
+              <label class="category__label">
+                <input class="category__input" type="radio" name="category">
+                <span class="category__text">
+                  Овощи и фрукты
+                </span>
+              </label>
+              <label class="category__label">
+                <input class="category__input" type="radio" name="category">
+                <span class="category__text">
+                  Бакалея
+                </span>
+              </label>
+              <label class="category__label">
+                <input class="category__input" type="radio" name="category">
+                <span class="category__text">
+                  Молочные продукты
+                </span>
+              </label>
+              <label class="category__label">
+                <input class="category__input" type="radio" name="category">
+                <span class="category__text">
+                  Хлеб
+                </span>
+              </label>
+              <label class="category__label">
+                <input class="category__input" type="radio" name="category">
+                <span class="category__text">
+                  Мясо
+                </span>
+              </label>
+              <label class="category__label">
+                <input class="category__input" type="radio" name="category">
+                <span class="category__text">
+                  Колбасаы
+                </span>
+              </label>
+              <label class="category__label">
+                <input class="category__input" type="radio" name="category">
+                <span class="category__text">
+                  Рыба
+                </span>
+              </label>
+              <label class="category__label">
+                <input class="category__input" type="radio" name="category">
+                <span class="category__text">
+                  Алкоголь
+                </span>
+              </label>
+            </form>
+          </li>
+          <li class="catalog-filters__item offers">
+            <button class="catalog-filters__title offers-btn" type="button">
+              Предложения
+            </button>
+            <form class="offers__form" action="#">
+              <label class="offers__label">
+                <input class="offers__input" type="checkbox">
+                <span class="offers__checkbox"></span>
+                <span class="offers__text">
+                  Со скидкой
+                </span>
+              </label>
+              <label class="offers__label">
+                <input class="offers__input" type="checkbox">
+                <span class="offers__checkbox"></span>
+                <span class="offers__text">
+                  Новинка
+                </span>
+              </label>
+              <label class="offers__label">
+                <input class="offers__input" type="checkbox">
+                <span class="offers__checkbox"></span>
+                <span class="offers__text">
+                  Хит
+                </span>
+              </label>
+            </form>
+          </li>
+          <li class="catalog-filters__item filter-price">
+            <button class="catalog-filters__title filter-price-btn" type="button">
+              Цена
+            </button>
+            <form class="filter-price__form" action="#">
+              <label class="filter-price__label">
+                <div class="filter-price__box">
+                  от
+                  <input class="filter-price__from" type="text">
+                  ₽
+                </div>
+                <div class="filter-price__box">
+                  до
+                  <input class="filter-price__to" type="text">
+                  ₽
+                </div>
+              </label>
+              <input class="filter-price__input" type="text">
+            </form>
+          </li>
+        </ul>
+      </div>
       <div class="catalog-content">
         <div class="catalog-content__filters">
+          <button class="catalog-content__filters-btn open-filters" type="button"></button>
           <form class="catalog-content__form" action="#">
-            <select class="catalog-contentr__select-name  select-style">
+            <select class="catalog-content__select-name  select-style">
               <option value="">По названию</option>
-              <option value="">2</option>
-              <option value="">3</option>
+              <option value="">По популярности</option>
+              <option value="">Сначала дешевые</option>
+              <option value="">Сначала дорогие</option>
+              <option value="">По алфавиту</option>
             </select>
             <select class="catalog-content__select-number select-style">
               <option value="">по 12</option>
-              <option value="">2</option>
-              <option value="">3</option>
+              <option value="">по 18</option>
+              <option value="">по 24</option>
+              <option value="">по 30</option>
+              <option value="">по 36</option>
             </select>
           </form>
-          <button class="catalog-content__filters-btn ">
-
+          <button class="catalog-content__filters-btn double" type="button">
+            <svg width="35" height="35">
+              <use xlink:href="images/sprite.svg#filter-btn-1"></use>
+            </svg>
           </button>
-          <button class="catalog-content__filters-btn ">
-
+          <button class="catalog-content__filters-btn catalog-content__filters-btn--active triple" type="button">
+            <svg width="35" height="35">
+              <use xlink:href="images/sprite.svg#filter-btn-2"></use>
+            </svg>
           </button>
+        </div>
+        <ul class="catalog-content__list">
+          <li class="catalog-content__item">
+            <article class="catalog-card">
+              <div class="catalog-card__badges badges">
+                <span class="new">НОВИНКА</span>
+                <span class="discount">-50%</span>
+              </div>
+              <button class="catalog-card__top-btn" type="button">
+                <svg width="32" height="28">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+              </button>
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
+                <div class="catalog-card__link--hover">
+                  <svg width="32" height="28">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </a>
+              <div class="catalog-card__wraper">
+                <div class="catalog-card__wraper-top">
+                  <span class="available">В наличии</span>
+                  <div class="rating">
+                    <span class="rating__counter">4.5</span>
+                    <div class="rating__star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </div>
+                <h3 class="catalog-card__title">Ананас, 1кг</h3>
+                <div class="catalog-card__bottom">
+                  <div class="catalog-card__price">
+                    <span class="catalog-card__old-price old-price">199 ₴</span>
+                    <span class="catalog-card__new-price new-price">99 ₴</span>
+                  </div>
+                  <button class="catalog-card__bottom-btn" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-content__item">
+            <article class="catalog-card">
+              <button class="catalog-card__top-btn" type="button">
+                <svg width="32" height="28">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+              </button>
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" width="300" height="225" src="images/catalog/2.png" alt="Товар">
+                <div class="catalog-card__link--hover">
+                  <svg width="32" height="28">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </a>
+              <div class="catalog-card__wraper">
+                <div class="catalog-card__wraper-top">
+                  <span class="available">В наличии</span>
+                  <div class="rating">
+                    <span class="rating__counter">4.5</span>
+                    <div class="rating__star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </div>
+                <h3 class="catalog-card__title">Лимон, 1кг</h3>
+                <div class="catalog-card__bottom">
+                  <div class="catalog-card__price">
+                    <span class="catalog-card__new-price new-price">49 ₴</span>
+                  </div>
+                  <button class="catalog-card__bottom-btn" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-content__item">
+            <article class="catalog-card">
+              <div class="catalog-card__badges badges">
+                <span class="available">Хит</span>
+              </div>
+              <button class="catalog-card__top-btn" type="button">
+                <svg width="32" height="28">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+              </button>
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" width="300" height="225" src="images/catalog/3.png" alt="Товар">
+                <div class="catalog-card__link--hover">
+                  <svg width="32" height="28">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </a>
+              <div class="catalog-card__wraper">
+                <div class="catalog-card__wraper-top">
+                  <span class="available">В наличии</span>
+                  <div class="rating">
+                    <span class="rating__counter">4.5</span>
+                    <div class="rating__star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </div>
+                <h3 class="catalog-card__title">Питахайя красная с белой мякотью, 1шт</h3>
+                <div class="catalog-card__bottom">
+                  <div class="catalog-card__price">
+                    <span class="catalog-card__new-price new-price">101 ₴</span>
+                  </div>
+                  <button class="catalog-card__bottom-btn" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-content__item">
+            <article class="catalog-card">
+              <div class="catalog-card__badges badges">
+                <span class="available">Хит</span>
+              </div>
+              <button class="catalog-card__top-btn" type="button">
+                <svg width="32" height="28">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+              </button>
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" width="300" height="225" src="images/catalog/5.png" alt="Товар">
+                <div class="catalog-card__link--hover">
+                  <svg width="32" height="28">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </a>
+              <div class="catalog-card__wraper">
+                <div class="catalog-card__wraper-top">
+                  <span class="not-available">Нет в наличии</span>
+                  <div class="rating">
+                    <span class="rating__counter">4.5</span>
+                    <div class="rating__star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </div>
+                <h3 class="catalog-card__title">Морковь молодая с бабушкиной грядки, 1кг</h3>
+                <div class="catalog-card__bottom">
+                  <div class="catalog-card__price">
+                    <span class="catalog-card__new-price new-price">19 ₴</span>
+                  </div>
+                  <button class="catalog-card__bottom-btn" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-content__item">
+            <article class="catalog-card">
+              <div class="catalog-card__badges badges">
+                <span class="discount">-30%</span>
+              </div>
+              <button class="catalog-card__top-btn" type="button">
+                <svg width="32" height="28">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+              </button>
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" width="300" height="225" src="images/catalog/6.png" alt="Товар">
+                <div class="catalog-card__link--hover">
+                  <svg width="32" height="28">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </a>
+              <div class="catalog-card__wraper">
+                <div class="catalog-card__wraper-top">
+                  <span class="available">В наличии</span>
+                  <div class="rating">
+                    <span class="rating__counter">4.5</span>
+                    <div class="rating__star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </div>
+                <h3 class="catalog-card__title">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...</h3>
+                <div class="catalog-card__bottom">
+                  <div class="catalog-card__price">
+                    <span class="catalog-card__old-price old-price">49 ₴</span>
+                    <span class="catalog-card__new-price new-price">19 ₴</span>
+                  </div>
+                  <button class="catalog-card__bottom-btn" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-content__item">
+            <article class="catalog-card">
+              <div class="catalog-card__badges badges">
+                <span class="new">НОВИНКА</span>
+              </div>
+              <button class="catalog-card__top-btn" type="button">
+                <svg width="32" height="28">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+              </button>
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" width="300" height="225" src="images/catalog/7.png" alt="Товар">
+                <div class="catalog-card__link--hover">
+                  <svg width="32" height="28">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </a>
+              <div class="catalog-card__wraper">
+                <div class="catalog-card__wraper-top">
+                  <span class="ends">Заканчивается</span>
+                  <div class="rating">
+                    <span class="rating__counter">4.5</span>
+                    <div class="rating__star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </div>
+                <h3 class="catalog-card__title">Кофе с коноплей органический Caffé Salomoni 250г</h3>
+                <div class="catalog-card__bottom">
+                  <div class="catalog-card__price">
+                    <span class="catalog-card__old-price old-price">199 ₴</span>
+                    <span class="catalog-card__new-price new-price">99 ₴</span>
+                  </div>
+                  <button class="catalog-card__bottom-btn" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-content__item">
+            <article class="catalog-card">
+              <div class="catalog-card__badges badges">
+                <span class="new">НОВИНКА</span>
+                <span class="discount">-50%</span>
+              </div>
+              <button class="catalog-card__top-btn" type="button">
+                <svg width="32" height="28">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+              </button>
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" width="300" height="225" src="images/catalog/8.png" alt="Товар">
+                <div class="catalog-card__link--hover">
+                  <svg width="32" height="28">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </a>
+              <div class="catalog-card__wraper">
+                <div class="catalog-card__wraper-top">
+                  <span class="available">В наличии</span>
+                  <div class="rating">
+                    <span class="rating__counter">4.5</span>
+                    <div class="rating__star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </div>
+                <h3 class="catalog-card__title">Перец оранжевый, 1кг</h3>
+                <div class="catalog-card__bottom">
+                  <div class="catalog-card__price">
+                    <span class="catalog-card__old-price old-price">199 ₴</span>
+                    <span class="catalog-card__new-price new-price">99 ₴</span>
+                  </div>
+                  <button class="catalog-card__bottom-btn" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-content__item">
+            <article class="catalog-card">
+              <button class="catalog-card__top-btn" type="button">
+                <svg width="32" height="28">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+              </button>
+              <a class="catalog-card__link" href="#">
+                <img class="catalog-card__img" width="300" height="225" src="images/catalog/4.png" alt="Товар">
+                <div class="catalog-card__link--hover">
+                  <svg width="32" height="28">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </a>
+              <div class="catalog-card__wraper">
+                <div class="catalog-card__wraper-top">
+                  <span class="available">В наличии</span>
+                  <div class="rating">
+                    <span class="rating__counter">4.5</span>
+                    <div class="rating__star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </div>
+                <h3 class="catalog-card__title">Кетчуп томатный детский органический Bio-Zentrale 500мл,
+                1 шт</h3>
+                <div class="catalog-card__bottom">
+                  <div class="catalog-card__price">
+                    <span class="catalog-card__new-price new-price">60 ₴</span>
+                  </div>
+                  <button class="catalog-card__bottom-btn" type="button">
+                    <svg width="16" height="16">
+                      <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="catalog-content__bottom">
+          <button class="catalog-content__bottom-btn btn">
+            Показать еще
+          </button>
+          <ul class="pagination">
+            <li class="pagination__item">
+              <a class="pagination__arrow" href="#">
+                <svg width="24" height="17">
+                  <use xlink:href="images/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">...</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">9</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">10</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__arrow" href="#">
+                <svg width="24" height="17">
+                  <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

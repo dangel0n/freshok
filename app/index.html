@@ -365,7 +365,7 @@
   </div>
 </header>
   <main class="main">
-    <section class="section hero">
+    <section class="hero">
   <div class="hero__slider">
     <div class="hero__slide">
       <div class="hero__item" style="background-image: url('images/hero-slider/slider-1.jpg');">
@@ -428,32 +428,6 @@
       </div>
     </div>
   </div>
-  <!-- <ul class="advantages">
-    <li class="advantages__item scooter">
-      <h3 class="advantages__title">
-        Бесплатная доставка
-      </h3>
-      <p class="advantages__text">
-        Для заказов на сумму от 500 ₴
-      </p>
-    </li>
-    <li class="advantages__item return">
-      <h3 class="advantages__title">
-        Возврат товара
-      </h3>
-      <p class="advantages__text">
-        Если товары были испорчены
-      </p>
-    </li>
-    <li class="advantages__item time">
-      <h3 class="advantages__title">
-        Поддержка 24/7
-      </h3>
-      <p class="advantages__text">
-        Лучшие операторы
-      </p>
-    </li>
-  </ul> -->
 </section>
     <section class="advantages">
   <ul class="advantages__list">
@@ -519,17 +493,15 @@
       <ul class="top__catalog">
         <li class="top__item mix category-a">
           <article class="catalog-card">
-            <div class="catalog-card__top">
-              <div class="catalog-card__badges badges">
-                <span class="new">НОВИНКА</span>
-                <span class="discount">-50%</span>
-              </div>
-              <button class="catalog-card__top-btn" type="button">
-                <svg width="32" height="28">
-                  <use xlink:href="images/sprite.svg#favorite"></use>
-                </svg>
-              </button>
+            <div class="catalog-card__badges badges">
+              <span class="new">НОВИНКА</span>
+              <span class="discount">-50%</span>
             </div>
+            <button class="catalog-card__top-btn" type="button">
+              <svg width="32" height="28">
+                <use xlink:href="images/sprite.svg#favorite"></use>
+              </svg>
+            </button>
             <a class="catalog-card__link" href="#">
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
               <div class="catalog-card__link--hover">
@@ -538,250 +510,247 @@
                 </svg>
               </div>
             </a>
-            <h3 class="catalog-card__title">Ананас, 1кг</h3>
-            <div class="catalog-card__bottom">
-              <div class="catalog-card__price">
-                <span class="catalog-card__old-price old-price">199 ₴</span>
-                <span class="catalog-card__new-price new-price">99 ₴</span>
+            <div class="catalog-card__wraper">
+              <h3 class="catalog-card__title">Ананас, 1кг</h3>
+              <div class="catalog-card__bottom">
+                <div class="catalog-card__price">
+                  <span class="catalog-card__old-price old-price">199 ₴</span>
+                  <span class="catalog-card__new-price new-price">99 ₴</span>
+                </div>
+                <button class="catalog-card__bottom-btn" type="button">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="catalog-card__bottom-btn" type="button">
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-              </button>
             </div>
           </article>
         </li>
         <li class="top__item mix category-a">
           <article class="catalog-card">
-            <div class="catalog-card__top">
-              <button class="catalog-card__top-btn" type="button">
-                <svg width="32" height="28">
-                  <use xlink:href="images/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
+            <button class="catalog-card__top-btn" type="button">
+              <svg width="32" height="28">
+                <use xlink:href="images/sprite.svg#favorite"></use>
+              </svg>
+            </button>
             <a class="catalog-card__link" href="#">
-              <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
+              <img class="catalog-card__img" width="300" height="225" src="images/catalog/2.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#search"></use>
                 </svg>
               </div>
             </a>
-            <h3 class="catalog-card__title">Лимон, 1кг</h3>
-            <div class="catalog-card__bottom">
-              <div class="catalog-card__price">
-                <span class="new-price">49 ₴</span>
+            <div class="catalog-card__wraper">
+              <h3 class="catalog-card__title">Лимон, 1кг</h3>
+              <div class="catalog-card__bottom">
+                <div class="catalog-card__price">
+                  <span class="catalog-card__new-price new-price">49 ₴</span>
+                </div>
+                <button class="catalog-card__bottom-btn" type="button">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="catalog-card__bottom-btn" type="button">
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-              </button>
             </div>
           </article>
         </li>
         <li class="top__item mix category-b">
           <article class="catalog-card">
-            <div class="catalog-card__top">
-              <div class="catalog-card__badges">
-                <span class="bestseller">Хит</span>
-              </div>
-              <button class="catalog-card__top-btn" type="button">
-                <svg width="32" height="28">
-                  <use xlink:href="/images/sprite.svg#favorite"></use>
-                </svg>
-              </button>
+            <div class="catalog-card__badges badges">
+              <span class="bestseller">Хит</span>
             </div>
+            <button class="catalog-card__top-btn" type="button">
+              <svg width="32" height="28">
+                <use xlink:href="images/sprite.svg#favorite"></use>
+              </svg>
+            </button>
             <a class="catalog-card__link" href="#">
-              <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
+              <img class="catalog-card__img" width="300" height="225" src="images/catalog/3.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#search"></use>
                 </svg>
               </div>
             </a>
-            <h3 class="catalog-card__title">Ананас, 1кг</h3>
-            <div class="catalog-card__bottom">
-              <div class="catalog-card__price">
-                <span class="catalog-card__old-price old-price">199 ₴</span>
-                <span class="catalog-card__new-price new-price">99 ₴</span>
+            <div class="catalog-card__wraper">
+              <h3 class="catalog-card__title">Питахайя красная с белой мякотью, 1шт</h3>
+              <div class="catalog-card__bottom">
+                <div class="catalog-card__price">
+                  <span class="catalog-card__new-price new-price">101 ₴</span>
+                </div>
+                <button class="catalog-card__bottom-btn" type="button">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="catalog-card__bottom-btn" type="button">
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-              </button>
             </div>
           </article>
         </li>
         <li class="top__item mix category-c">
           <article class="catalog-card">
-            <div class="catalog-card__top">
-              <div class="catalog-card__badges">
-              </div>
-              <button class="catalog-card__top-btn" type="button">
-                <svg width="32" height="28">
-                  <use xlink:href="images/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
+            <button class="catalog-card__top-btn" type="button">
+              <svg width="32" height="28">
+                <use xlink:href="images/sprite.svg#favorite"></use>
+              </svg>
+            </button>
             <a class="catalog-card__link" href="#">
-              <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
+              <img class="catalog-card__img" width="300" height="225" src="images/catalog/4.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#search"></use>
                 </svg>
               </div>
             </a>
-            <h3 class="catalog-card__title">Ананас, 1кг</h3>
-            <div class="catalog-card__bottom">
-              <div class="catalog-card__price">
-                <span class="catalog-card__old-price old-price">199 ₴</span>
-                <span class="catalog-card__new-price new-price">99 ₴</span>
+            <div class="catalog-card__wraper">
+              <h3 class="catalog-card__title">Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт</h3>
+              <div class="catalog-card__bottom">
+                <div class="catalog-card__price">
+                  <span class="catalog-card__new-price new-price">60 ₴</span>
+                </div>
+                <button class="catalog-card__bottom-btn" type="button">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="catalog-card__bottom-btn" type="button">
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-              </button>
             </div>
           </article>
         </li>
         <li class="top__item mix category-d">
           <article class="catalog-card">
-            <div class="catalog-card__top">
-              <div class="catalog-card__badges">
-                <span class="bestseller">Хит</span>
-              </div>
-              <button class="catalog-card__top-btn" type="button">
-                <svg width="32" height="28">
-                  <use xlink:href="images/sprite.svg#favorite"></use>
-                </svg>
-              </button>
+            <div class="catalog-card__badges badges">
+              <span class="bestseller">Хит</span>
             </div>
+            <button class="catalog-card__top-btn" type="button">
+              <svg width="32" height="28">
+                <use xlink:href="images/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+
             <a class="catalog-card__link" href="#">
-              <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
+              <img class="catalog-card__img" width="300" height="225" src="images/catalog/5.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#search"></use>
                 </svg>
               </div>
             </a>
-            <h3 class="catalog-card__title">Ананас, 1кг</h3>
-            <div class="catalog-card__bottom">
-              <div class="catalog-card__price">
-                <span class="catalog-card__old-price old-price">199 ₴</span>
-                <span class="catalog-card__new-price new-price">99 ₴</span>
+            <div class="catalog-card__wraper">
+              <h3 class="catalog-card__title">Морковь молодая с бабушкиной грядки, 1кг</h3>
+              <div class="catalog-card__bottom">
+                <div class="catalog-card__price">
+                  <span class="catalog-card__new-price new-price">19 ₴</span>
+                </div>
+                <button class="catalog-card__bottom-btn" type="button">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="catalog-card__bottom-btn" type="button">
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-              </button>
             </div>
           </article>
         </li>
         <li class="top__item mix category-d">
           <article class="catalog-card">
-            <div class="catalog-card__top">
-              <div class="catalog-card__badges">
-                <span class="discount">-30%</span>
-              </div>
-              <button class="catalog-card__top-btn" type="button">
-                <svg width="32" height="28">
-                  <use xlink:href="images/sprite.svg#favorite"></use>
-                </svg>
-              </button>
+            <div class="catalog-card__badges badges">
+              <span class="discount">-50%</span>
             </div>
+            <button class="catalog-card__top-btn" type="button">
+              <svg width="32" height="28">
+                <use xlink:href="images/sprite.svg#favorite"></use>
+              </svg>
+            </button>
             <a class="catalog-card__link" href="#">
-              <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
+              <img class="catalog-card__img" width="300" height="225" src="images/catalog/6.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#search"></use>
                 </svg>
               </div>
             </a>
-            <h3 class="catalog-card__title">Ананас, 1кг</h3>
-            <div class="catalog-card__bottom">
-              <div class="catalog-card__price">
-                <span class="catalog-card__old-price old-price">199 ₴</span>
-                <span class="catalog-card__new-price new-price">99 ₴</span>
+            <div class="catalog-card__wraper">
+              <h3 class="catalog-card__title">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...</h3>
+              <div class="catalog-card__bottom">
+                <div class="catalog-card__price">
+                  <span class="catalog-card__old-price old-price">49 ₴</span>
+                  <span class="catalog-card__new-price new-price">29 ₴</span>
+                </div>
+                <button class="catalog-card__bottom-btn" type="button">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="catalog-card__bottom-btn" type="button">
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-              </button>
             </div>
           </article>
         </li>
         <li class="top__item mix category-b">
           <article class="catalog-card">
-            <div class="catalog-card__top">
-              <div class="catalog-card__badges">
-                <span class="new">НОВИНКА</span>
-              </div>
-              <button class="catalog-card__top-btn" type="button">
-                <svg width="32" height="28">
-                  <use xlink:href="images/sprite.svg#favorite"></use>
-                </svg>
-              </button>
+            <div class="catalog-card__badges badges">
+              <span class="new">НОВИНКА</span>
             </div>
+            <button class="catalog-card__top-btn" type="button">
+              <svg width="32" height="28">
+                <use xlink:href="images/sprite.svg#favorite"></use>
+              </svg>
+            </button>
+
             <a class="catalog-card__link" href="#">
-              <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
+              <img class="catalog-card__img" width="300" height="225" src="images/catalog/7.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#search"></use>
                 </svg>
               </div>
             </a>
-            <h3 class="catalog-card__title">Ананас, 1кг</h3>
-            <div class="catalog-card__bottom">
-              <div class="catalog-card__price">
-                <span class="catalog-card__old-price old-price">199 ₴</span>
-                <span class="catalog-card__new-price new-price">99 ₴</span>
+            <div class="catalog-card__wraper">
+              <h3 class="catalog-card__title">Кофе с коноплей органический Caffé Salomoni 250г</h3>
+              <div class="catalog-card__bottom">
+                <div class="catalog-card__price">
+                  <span class="catalog-card__new-price new-price">219 ₴</span>
+                </div>
+                <button class="catalog-card__bottom-btn" type="button">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="catalog-card__bottom-btn" type="button">
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-              </button>
             </div>
           </article>
         </li>
         <li class="top__item mix category-c">
           <article class="catalog-card">
-            <div class="catalog-card__top">
-              <div class="catalog-card__badges">
-                <span class="new">НОВИНКА</span>
-              </div>
-              <button class="catalog-card__top-btn" type="button">
-                <svg width="32" height="28">
-                  <use xlink:href="images/sprite.svg#favorite"></use>
-                </svg>
-              </button>
+            <div class="catalog-card__badges badges">
+              <span class="new">НОВИНКА</span>
             </div>
+            <button class="catalog-card__top-btn" type="button">
+              <svg width="32" height="28">
+                <use xlink:href="images/sprite.svg#favorite"></use>
+              </svg>
+            </button>
             <a class="catalog-card__link" href="#">
-              <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
+              <img class="catalog-card__img" width="300" height="225" src="images/catalog/8.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#search"></use>
                 </svg>
               </div>
             </a>
-            <h3 class="catalog-card__title">Ананас, 1кг</h3>
-            <div class="catalog-card__bottom">
-              <div class="catalog-card__price">
-                <span class="catalog-card__old-price old-price">199 ₴</span>
-                <span class="catalog-card__new-price new-price">99 ₴</span>
+            <div class="catalog-card__wraper">
+              <h3 class="catalog-card__title">Перец оранжевый, 1кг</h3>
+              <div class="catalog-card__bottom">
+                <div class="catalog-card__price">
+                  <span class="catalog-card__new-price new-price">100 ₴</span>
+                </div>
+                <button class="catalog-card__bottom-btn" type="button">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="catalog-card__bottom-btn" type="button">
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-              </button>
             </div>
           </article>
         </li>

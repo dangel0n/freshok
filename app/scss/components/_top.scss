@@ -76,8 +76,8 @@
     transition: all 0.3s;
 
     @media (max-width: $sm) {
-        font-size: 14px;
-      }
+      font-size: 14px;
+    }
 
     &:focus {
       box-shadow: 0px 0px 0px 3px $green-200;
@@ -96,24 +96,27 @@
 }
 
 .catalog-card {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding-top: 57px;
   height: 409px;
   padding-bottom: 18px;
   border: 1px solid rgba(17, 17, 17, 0.2);
   border-radius: 6px;
-  transition: all 0.3s;
+  transition: border 0.3s;
+
+  &:hover {
+    border: 1px solid $green-900;
+  }
 
   @media (max-width: $md) {
     height: 370px;
   }
 
   @media (max-width: $sm) {
-    height: 304px;
-  }
-
-  &:hover {
-    border: 1px solid $green-900;
+    height: 344px;
   }
 
   &__top {
@@ -125,10 +128,13 @@
   }
 
   &__badges {
+    position: absolute;
+    top: 18px;
+    left: 12px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    order: 1;
+    z-index: 1;
 
     span+span {
       margin-top: 6px;
@@ -137,38 +143,47 @@
 
   &__top-btn {
     cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 12px;
     transition: all 0.3s;
     outline: transparent;
+
     svg {
       filter: invert(96%) sepia(0%) saturate(173%) hue-rotate(176deg) brightness(83%) contrast(87%);
     }
 
-    &:focus{
+    &:focus {
       box-shadow: 0px 0px 0px 3px #E0EDCF;
     }
 
-    &:hover{
+    &:hover {
       filter: invert(64%) sepia(99%) saturate(1204%) hue-rotate(1deg) brightness(105%) contrast(103%);
     }
 
-    &:active{
+    &:active {
       opacity: 0.5;
       box-shadow: none;
     }
   }
 
+  &__wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 18px;
+  }
+
   &__title {
     letter-spacing: 0.03em;
-    margin-left: 18px;
-    margin-bottom: auto;
+    @include line-clamp(3);
   }
 
   &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-right: 18px;
-    margin-left: 21px;
   }
 
   &__bottom-btn {
@@ -221,7 +236,7 @@
     width: 48px;
     height: 48px;
     left: 50%;
-    bottom: -50%;
+    bottom: -100%;
     transform: translateX(-50%);
     border-radius: 50%;
     background-color: #fff;
@@ -241,6 +256,8 @@
   &__link {
     position: relative;
     overflow: hidden;
+    margin-top: 7px;
+    margin-bottom: 18px;
 
     &::after {
       content: "";

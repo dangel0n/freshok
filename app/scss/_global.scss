@@ -4,6 +4,22 @@
   }
 }
 
+@mixin line-clamp($lines: 1) {
+  @if $lines <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -31,10 +47,10 @@ body {
 }
 
 .section {
-  margin-bottom: 72px;
+  margin: 72px 0;
 
   @media (max-width: $md) {
-    margin-bottom: 48px;
+    margin: 48px 0;
   }
 }
 
@@ -73,6 +89,7 @@ body {
   line-height: 1;
   letter-spacing: 0.03em;
   color: $green-900;
+  text-transform: uppercase;
 }
 
 .ends {

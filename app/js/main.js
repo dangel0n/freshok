@@ -99,7 +99,6 @@ $(function () {
   $inputFrom.on("change", function () {
     var val = $(this).prop("value");
 
-    // validate
     if (val < min) {
       val = min;
     } else if (val > to) {
@@ -131,6 +130,34 @@ $(function () {
   });
 
   $('.select-style').styler();
+
+  $('.catalog-content__filters-btn').on('click', function () {
+    $('.catalog-content__filters-btn').removeClass('catalog-content__filters-btn--active');
+    $(this).addClass('catalog-content__filters-btn--active')
+  })
+
+  $('.double').on('click', function () {
+    $('.catalog-content__list').addClass('catalog-content__list--active');
+    $('.catalog-content__item').addClass('horizontal-veiw');
+  })
+
+  $('.triple').on('click', function () {
+    $('.catalog-content__list').removeClass('catalog-content__list--active');
+    $('.catalog-content__item').removeClass('horizontal-veiw');
+  })
+
+  $('.pagination__link').on('click', function () {
+    $('.pagination__link').removeClass('pagination__link--active');
+    $(this).addClass('pagination__link--active')
+  })
+
+  $('.open-filters').on('click', function () {
+    $('.catalog__wraper').addClass('catalog__wraper--active');
+  });
+
+  $('.catalog-filters__close').on('click', function () {
+    $('.catalog__wraper').removeClass('catalog__wraper--active');
+  });
 
   var containerEl1 = document.querySelector('.top__content');
   var containerEl2 = document.querySelector('.stock__content');
