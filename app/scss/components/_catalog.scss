@@ -213,17 +213,6 @@
     }
   }
 
-  &__checkbox {
-    position: absolute;
-    left: 0px;
-    width: 24px;
-    height: 24px;
-    background-color: $silver-100;
-    border: 1px solid #C1C1C1;
-    border-radius: 3px;
-    transition: border 0.3s;
-  }
-
   &__text {
     font-weight: 400;
     font-size: 18px;

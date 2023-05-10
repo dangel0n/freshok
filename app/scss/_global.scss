@@ -143,6 +143,7 @@ body {
   background-color: $green-900;
   border-radius: 6px;
   padding: 3px 6px;
+  text-transform: uppercase;
 }
 
 .discount {
@@ -154,6 +155,7 @@ body {
   line-height: 100%;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .old-price {
@@ -165,9 +167,9 @@ body {
   &::after {
     content: "";
     position: absolute;
-    width: 45px;
+    width: 100%;
     height: 1px;
-    top: 7px;
+    top: 50%;
     left: 0;
     background-color: $silver-600;
     transform: rotate(-15deg);
@@ -189,4 +191,16 @@ body {
   border-radius: 6px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.checkbox{
+  position: absolute;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    background-color: $silver-100;
+    border: 1px solid #C1C1C1;
+    border-radius: 3px;
+    transition: border 0.3s;
 }

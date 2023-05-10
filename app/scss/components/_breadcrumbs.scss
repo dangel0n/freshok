@@ -2,12 +2,12 @@
   width: 100%;
   background-color: $silver-100;
   margin-top: 160px;
- 
+
 
   @media (max-width: $md) {
-      margin-top: 121px; 
-      overflow-x: scroll;
-    }
+    margin-top: 121px;
+    overflow-x: scroll;
+  }
 
   &__list {
     display: flex;
@@ -15,18 +15,21 @@
     padding: 24px 0;
   }
 
-  &__item:last-child{
+  &__item{
     position: relative;
+  }
+
+  &__item:last-child {
     opacity: 0.8;
   }
 
-  &__item:last-child::before {
+  &__item:not(:last-child)::after {
     content: "";
     position: absolute;
     width: 6px;
     height: 10px;
     top: 5px;
-    left: -9px;
+    right: 4px;
     background-image: url(./../images/icons/icon-arrow-right.svg);
     background-size: cover;
   }
