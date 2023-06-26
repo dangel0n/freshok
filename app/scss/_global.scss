@@ -77,9 +77,18 @@ body {
   text-transform: uppercase;
 
   @media (max-width: $md) {
-      font-size: 24px;
-      margin-bottom: 24px;
-    }
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.sr-only {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .available {
@@ -194,13 +203,52 @@ body {
   text-transform: uppercase;
 }
 
-.checkbox{
+.checkbox {
   position: absolute;
-    left: 0px;
-    width: 24px;
-    height: 24px;
-    background-color: $silver-100;
-    border: 1px solid #C1C1C1;
-    border-radius: 3px;
-    transition: border 0.3s;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  background-color: $silver-100;
+  border: 1px solid #C1C1C1;
+  border-radius: 3px;
+  transition: border 0.3s;
 }
+
+.slick-dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  li {
+    line-height: 0;
+    margin-right: 12px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid $silver-600;
+    border-radius: 50%;
+
+    button {
+      font-size: 0;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .slick-active {
+    background-color: $green-900;
+    border: 1px solid $green-900;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+}
+

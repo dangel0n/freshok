@@ -119,8 +119,10 @@
   }
 
   &__btn {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     transition: all 0.3s;
 
     &:focus {

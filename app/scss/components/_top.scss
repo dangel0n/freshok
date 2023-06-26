@@ -24,8 +24,10 @@
   }
 
   &__btn {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #fff;
     color: $green-900;
     border: 1px solid $green-900;
@@ -146,7 +148,7 @@
     position: absolute;
     top: 18px;
     right: 12px;
-    transition: all 0.3s;
+    transition: filter 0.3s, box-shadow 0.3s, opsacity 0.3s;
     outline: transparent;
 
     svg {

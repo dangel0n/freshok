@@ -1,30 +1,18 @@
 
-
 $(function () {
-  
 
-
-  let lastScroll = 0;
-  const defaultOffset = 200;
-  const header = $('.header');
-
-  const scrollPosition = () => $(window).scrollTop();
-  const containHide = () => header.hasClass('header--hide');
-
-  $(window).scroll(() => {
-    if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
-      //scroll down
-      header.addClass('header--hide');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      if ($(this).scrollTop() > $(this).data('prev-scroll-top')) {
+        $('.header').addClass('header--hide');
+      } else {
+        $('.header').removeClass('header--hide');
+      }
+    } else {
+      $('.header').removeClass('header--hide');
     }
-    else if (scrollPosition() < lastScroll && containHide()) {
-      //scroll up
-      header.removeClass('header--hide');
-    }
-
-    lastScroll = scrollPosition();
+    $(this).data('prev-scroll-top', $(this).scrollTop());
   });
-
-  
 
   $('.hero__slider').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/icon-arrow-left.svg" alt=""></button>',
@@ -77,6 +65,7 @@ $(function () {
 
   $('.menu-mob__close').on('click', function () {
     $('.menu-mob').removeClass('menu-mob--active')
+    $('body').removeClass('fixed')
   });
 
   $('.category-btn').on('click', function () {
@@ -189,6 +178,15 @@ $(function () {
   $('.card__slider').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/icon-arrow-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/icon-arrow-right.svg" alt=""></button>',
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
   });
 
   $(".card__rating, .review__star").rateYo({
@@ -229,15 +227,33 @@ $(function () {
 
     slidesToShow: 4,
     slidesToScroll: 4,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+          dots: true,
+        }
+      }
+    ]
   });
 
-  //   $(window).scrollTop(function () {
-  //   if ($(window).scrollTop() >= 200) {
-  //     $('.header').addClass('header--hide')
-  //   } else  {
-  //     $('.header').removeClass('header--hide')
-  //   } 
-  // });
+
+
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+ });
+
 
   var containerEl1 = document.querySelector('.top__content');
   var containerEl2 = document.querySelector('.stock__content');

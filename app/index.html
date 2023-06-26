@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/images/favicon/favicon.ico" type="svg+xml">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" href="images/favicon/favicon.ico" type="svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.min.css">
@@ -29,22 +29,24 @@
       <ul class="menu-mob__client">
         <li class="menu-mob__client-item">
           <a class="menu-mob__link enter" href="#">
+            <span class="sr-only">вход в аккаунт</span>
             Вход
           </a>
         </li>
         <li class="menu-mob__client-item">
           <a class="menu-mob__link registration" href="#">
+            <span class="sr-only">регистрация на сайте</span>
             Регистрация
           </a>
         </li>
       </ul>
-      <button class="header__btn" type="button">
+      <button class="header__btn header__btn--mob" type="button">
         <svg width="24" height="17">
           <use xlink:href="../images/sprite.svg#header-btn-decor"></use>
         </svg>
         Каталог товаров
       </button>
-      <ul class="header__catalog-list">
+      <ul class="header__catalog-list header__catalog-list--mob ">
         <li class="header__catalog-item header__catalog-item--mob">
           <a class="header__catalog-link header__catalog-link--mob" href="#">
             Овощи и фрукты
@@ -122,6 +124,7 @@
         <ul class="socials">
           <li class="socials__item">
             <a class="socials__link" href="#">
+              <span class="sr-only">ссылка на фейсбук</span>
               <svg width="31" height="32">
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
@@ -129,6 +132,7 @@
           </li>
           <li class="socials__item">
             <a class="socials__link" href="#">
+              <span class="sr-only">ссылка на телеграм ютуб</span>
               <svg width="31" height="32">
                 <use xlink:href="images/sprite.svg#youtube"></use>
               </svg>
@@ -136,6 +140,7 @@
           </li>
           <li class="socials__item">
             <a class="socials__link" href="#">
+              <span class="sr-only">ссылка на телеграм</span>
               <svg width="31" height="32">
                 <use xlink:href="images/sprite.svg#telegram"></use>
               </svg>
@@ -143,6 +148,7 @@
           </li>
           <li class="socials__item">
             <a class="socials__link" href="#">
+              <span class="sr-only">ссылка на инстаграм</span>
               <svg width="31" height="32">
                 <use xlink:href="images/sprite.svg#instagram"></use>
               </svg>
@@ -198,6 +204,7 @@
     <div class="container">
       <div class="header-top__content">
         <button class="burger-menu" type="button">
+          <span class="sr-only">открыть меню</span>
           <span class="burger-menu__span"></span>
         </button>
         <ul class="header-top__list">
@@ -319,6 +326,7 @@
         </ul>
       </div>
       <form class="header__form">
+        <span class="sr-only">поиск товаров на сайте</span>
         <button class="header__input-btn--search" type="submit">
           <svg width="20px" height="20px">
             <use xlink:href="images/sprite.svg#search"></use>
@@ -332,6 +340,7 @@
       <ul class="user-nav">
         <li class="user-nav__item">
           <a class="user-nav__link search" href="#">
+            <span class="sr-only">открыть поиск по сайту</span>
             <svg width="32" height="28">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
@@ -339,6 +348,7 @@
         </li>
         <li class="user-nav__item">
           <a class="user-nav__link user" href="#">
+            <span class="sr-only">перейти в личный кабинет</span>
             <svg width="32" height="28">
               <use xlink:href="images/sprite.svg#user-link"></use>
             </svg>
@@ -346,6 +356,7 @@
         </li>
         <li class="user-nav__item">
           <a class="user-nav__link favorite" href="#">
+            <span class="sr-only">избранные товары</span>
             <svg width="32" height="28">
               <use xlink:href="images/sprite.svg#favorite"></use>
             </svg>
@@ -354,6 +365,7 @@
         </li>
         <li class="user-nav__item">
           <a class="user-nav__link cart" href="#">
+            <span class="sr-only">корзина товаров</span>
             <svg width="32" height="28">
               <use xlink:href="images/sprite.svg#cart"></use>
             </svg>
@@ -498,11 +510,13 @@
               <span class="discount">-50%</span>
             </div>
             <button class="catalog-card__top-btn" type="button">
+              <span class="sr-only">добавить в избранное</span>
               <svg width="32" height="28">
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
             </button>
-            <a class="catalog-card__link" href="#">
+            <a class="catalog-card__link" href="card.html">
+              <span class="sr-only">перейти на страницу продукта</span>
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
@@ -514,8 +528,15 @@
               <h3 class="catalog-card__title">Ананас, 1кг</h3>
               <div class="catalog-card__bottom">
                 <div class="catalog-card__price">
-                  <span class="catalog-card__old-price old-price">199 ₴</span>
-                  <span class="catalog-card__new-price new-price">99 ₴</span>
+                  <span class="catalog-card__old-price old-price">
+                    <span class="sr-only">
+                      старая цена
+                    </span>
+                    199 ₴</span>
+                  <span class="catalog-card__new-price new-price">
+                    <span class="sr-only">
+                      новая цена</span>
+                    99 ₴</span>
                 </div>
                 <button class="catalog-card__bottom-btn" type="button">
                   <svg width="16" height="16">
@@ -529,11 +550,13 @@
         <li class="top__item mix category-a">
           <article class="catalog-card">
             <button class="catalog-card__top-btn" type="button">
+              <span class="sr-only">добавить в избранное</span>
               <svg width="32" height="28">
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
             </button>
-            <a class="catalog-card__link" href="#">
+            <a class="catalog-card__link" href="card.html">
+              <span class="sr-only">перейти на страницу продукта</span>
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/2.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
@@ -545,7 +568,12 @@
               <h3 class="catalog-card__title">Лимон, 1кг</h3>
               <div class="catalog-card__bottom">
                 <div class="catalog-card__price">
-                  <span class="catalog-card__new-price new-price">49 ₴</span>
+                  <span class="catalog-card__new-price new-price">
+                    <span class="sr-only">
+                      новая цена
+                    </span>
+                    49 ₴
+                  </span>
                 </div>
                 <button class="catalog-card__bottom-btn" type="button">
                   <svg width="16" height="16">
@@ -562,11 +590,13 @@
               <span class="bestseller">Хит</span>
             </div>
             <button class="catalog-card__top-btn" type="button">
+              <span class="sr-only">добавить в избранное</span>
               <svg width="32" height="28">
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
             </button>
-            <a class="catalog-card__link" href="#">
+            <a class="catalog-card__link" href="card.html">
+              <span class="sr-only">перейти на страницу продукта</span>
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/3.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
@@ -578,7 +608,11 @@
               <h3 class="catalog-card__title">Питахайя красная с белой мякотью, 1шт</h3>
               <div class="catalog-card__bottom">
                 <div class="catalog-card__price">
-                  <span class="catalog-card__new-price new-price">101 ₴</span>
+                  <span class="catalog-card__new-price new-price">
+                    <span class="sr-only">
+                      новая цена
+                    </span>
+                    101 ₴</span>
                 </div>
                 <button class="catalog-card__bottom-btn" type="button">
                   <svg width="16" height="16">
@@ -592,11 +626,13 @@
         <li class="top__item mix category-c">
           <article class="catalog-card">
             <button class="catalog-card__top-btn" type="button">
+              <span class="sr-only">добавить в избранное</span>
               <svg width="32" height="28">
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
             </button>
-            <a class="catalog-card__link" href="#">
+            <a class="catalog-card__link" href="card.html">
+              <span class="sr-only">перейти на страницу продукта</span>
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/4.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
@@ -608,7 +644,12 @@
               <h3 class="catalog-card__title">Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт</h3>
               <div class="catalog-card__bottom">
                 <div class="catalog-card__price">
-                  <span class="catalog-card__new-price new-price">60 ₴</span>
+                  <span class="catalog-card__new-price new-price">
+                    <span class="sr-only">
+                      новая цена
+                    </span>
+                    60 ₴
+                  </span>
                 </div>
                 <button class="catalog-card__bottom-btn" type="button">
                   <svg width="16" height="16">
@@ -625,12 +666,13 @@
               <span class="bestseller">Хит</span>
             </div>
             <button class="catalog-card__top-btn" type="button">
+              <span class="sr-only">добавить в избранное</span>
               <svg width="32" height="28">
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
             </button>
-
-            <a class="catalog-card__link" href="#">
+            <a class="catalog-card__link" href="card.html">
+              <span class="sr-only">перейти на страницу продукта</span>
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/5.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
@@ -642,7 +684,11 @@
               <h3 class="catalog-card__title">Морковь молодая с бабушкиной грядки, 1кг</h3>
               <div class="catalog-card__bottom">
                 <div class="catalog-card__price">
-                  <span class="catalog-card__new-price new-price">19 ₴</span>
+                  <span class="catalog-card__new-price new-price">
+                    <span class="sr-only">
+                      новая цена
+                    </span>
+                    19 ₴</span>
                 </div>
                 <button class="catalog-card__bottom-btn" type="button">
                   <svg width="16" height="16">
@@ -659,11 +705,13 @@
               <span class="discount">-50%</span>
             </div>
             <button class="catalog-card__top-btn" type="button">
+              <span class="sr-only">добавить в избранное</span>
               <svg width="32" height="28">
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
             </button>
-            <a class="catalog-card__link" href="#">
+            <a class="catalog-card__link" href="card.html">
+              <span class="sr-only">перейти на страницу продукта</span>
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/6.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
@@ -672,11 +720,20 @@
               </div>
             </a>
             <div class="catalog-card__wraper">
-              <h3 class="catalog-card__title">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...</h3>
+              <h3 class="catalog-card__title">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+                безалкогольн...</h3>
               <div class="catalog-card__bottom">
                 <div class="catalog-card__price">
-                  <span class="catalog-card__old-price old-price">49 ₴</span>
-                  <span class="catalog-card__new-price new-price">29 ₴</span>
+                  <span class="catalog-card__old-price old-price">
+                    <span class="sr-only">
+                      старая цена
+                    </span>
+                    49 ₴</span>
+                  <span class="catalog-card__new-price new-price">
+                    <span class="sr-only">
+                      новая цена
+                    </span>29 ₴
+                  </span>
                 </div>
                 <button class="catalog-card__bottom-btn" type="button">
                   <svg width="16" height="16">
@@ -693,12 +750,13 @@
               <span class="new">НОВИНКА</span>
             </div>
             <button class="catalog-card__top-btn" type="button">
+              <span class="sr-only">добавить в избранное</span>
               <svg width="32" height="28">
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
             </button>
-
-            <a class="catalog-card__link" href="#">
+            <a class="catalog-card__link" href="card.html">
+              <span class="sr-only">перейти на страницу продукта</span>
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/7.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
@@ -710,7 +768,12 @@
               <h3 class="catalog-card__title">Кофе с коноплей органический Caffé Salomoni 250г</h3>
               <div class="catalog-card__bottom">
                 <div class="catalog-card__price">
-                  <span class="catalog-card__new-price new-price">219 ₴</span>
+                  <span class="catalog-card__new-price new-price">
+                    <span class="sr-only">
+                      новая цена
+                    </span>
+                    219 ₴
+                  </span>
                 </div>
                 <button class="catalog-card__bottom-btn" type="button">
                   <svg width="16" height="16">
@@ -727,11 +790,13 @@
               <span class="new">НОВИНКА</span>
             </div>
             <button class="catalog-card__top-btn" type="button">
+              <span class="sr-only">добавить в избранное</span>
               <svg width="32" height="28">
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
             </button>
-            <a class="catalog-card__link" href="#">
+            <a class="catalog-card__link" href="card.html">
+              <span class="sr-only">перейти на страницу продукта</span>
               <img class="catalog-card__img" width="300" height="225" src="images/catalog/8.png" alt="Товар">
               <div class="catalog-card__link--hover">
                 <svg width="32" height="28">
@@ -743,7 +808,12 @@
               <h3 class="catalog-card__title">Перец оранжевый, 1кг</h3>
               <div class="catalog-card__bottom">
                 <div class="catalog-card__price">
-                  <span class="catalog-card__new-price new-price">100 ₴</span>
+                  <span class="catalog-card__new-price new-price">
+                    <span class="sr-only">
+                      новая цена
+                    </span>
+                    100 ₴
+                  </span>
                 </div>
                 <button class="catalog-card__bottom-btn" type="button">
                   <svg width="16" height="16">
@@ -756,7 +826,7 @@
         </li>
       </ul>
     </div>
-    <button class="top__btn btn" type="button">Показать еще</button>
+    <a class="top__btn btn" href="catalog.html">Показать еще</a>
   </div>
 </section>
      <section class="banners section">
@@ -834,9 +904,20 @@
               </h3>
               <div class="stock__product-wrapper">
                 <span class="available">В НАЛИЧИИ</span>
-                <span class="stock__new-price new-price">99₴</span>
-                <span class="stock__old-price old-price">199 ₴</span>
+                <span class="stock__new-price new-price">
+                  <span class="sr-only">
+                    новая цена
+                  </span>
+                  99₴
+                </span>
+                <span class="stock__old-price old-price">
+                  <span class="sr-only">
+                    старая цена
+                  </span>
+                  199 ₴
+                </span>
                 <div class="rating">
+                  <span class="sr-only">рейтинг</span>
                   <span class="rating__counter">4.5</span>
                   <div class="rating__star" data-rateyo-rating="4.5"></div>
                 </div>
@@ -854,9 +935,20 @@
               </h3>
               <div class="stock__product-wrapper">
                 <span class="ends">ЗАКАНЧИВАЕТСЯ</span>
-                <span class="stock__new-price new-price">99₴</span>
-                <span class="stock__old-price old-price">199 ₴</span>
+                <span class="stock__new-price new-price">
+                  <span class="sr-only">
+                    новая цена
+                  </span>
+                  99₴
+                </span>
+                <span class="stock__old-price old-price">
+                  <span class="sr-only">
+                    старая цена
+                  </span>
+                  199 ₴
+                </span>
                 <div class="rating">
+                  <span class="sr-only">рейтинг</span>
                   <span class="rating__counter">4.5</span>
                   <div class="rating__star" data-rateyo-rating="4.5"></div>
                 </div>
@@ -874,9 +966,20 @@
               </h3>
               <div class="stock__product-wrapper">
                 <span class="not-available">НЕТ В НАЛИЧИИ</span>
-                <span class="stock__new-price new-price">99₴</span>
-                <span class="stock__old-price old-price">199 ₴</span>
+                <span class="stock__new-price new-price">
+                  <span class="sr-only">
+                    новая цена
+                  </span>
+                  99₴
+                </span>
+                <span class="stock__old-price old-price">
+                  <span class="sr-only">
+                    старая цена
+                  </span>
+                  199 ₴
+                </span>
                 <div class="rating">
+                  <span class="sr-only">рейтинг</span>
                   <span class="rating__counter">4.5</span>
                   <div class="rating__star" data-rateyo-rating="4.5"></div>
                 </div>
@@ -894,9 +997,20 @@
               </h3>
               <div class="stock__product-wrapper">
                 <span class="available">НАЛИЧИИ</span>
-                <span class="stock__new-price new-price">99₴</span>
-                <span class="stock__old-price old-price">199 ₴</span>
+                <span class="stock__new-price new-price">
+                  <span class="sr-only">
+                    новая цена
+                  </span>
+                  99₴
+                </span>
+                <span class="stock__old-price old-price">
+                  <span class="sr-only">
+                    старая цена
+                  </span>
+                  199 ₴
+                </span>
                 <div class="rating">
+                  <span class="sr-only">рейтинг</span>
                   <span class="rating__counter">4.5</span>
                   <div class="rating__star" data-rateyo-rating="4.5"></div>
                 </div>
@@ -914,9 +1028,20 @@
               </h3>
               <div class="stock__product-wrapper">
                 <span class="available">НАЛИЧИИ</span>
-                <span class="stock__new-price new-price">99₴</span>
-                <span class="stock__old-price old-price">199 ₴</span>
+                <span class="stock__new-price new-price">
+                  <span class="sr-only">
+                    новая цена
+                  </span>
+                  99₴
+                </span>
+                <span class="stock__old-price old-price">
+                  <span class="sr-only">
+                    старая цена
+                  </span>
+                  199 ₴
+                </span>
                 <div class="rating">
+                  <span class="sr-only">рейтинг</span>
                   <span class="rating__counter">4.5</span>
                   <div class="rating__star" data-rateyo-rating="4.5"></div>
                 </div>
@@ -934,9 +1059,20 @@
               </h3>
               <div class="stock__product-wrapper">
                 <span class="ends">ЗАКАНЧИВАЕТСЯ</span>
-                <span class="stock__new-price new-price">99₴</span>
-                <span class="stock__old-price old-price">199 ₴</span>
+                <span class="stock__new-price new-price">
+                  <span class="sr-only">
+                    новая цена
+                  </span>
+                  99₴
+                </span>
+                <span class="stock__old-price old-price">
+                  <span class="sr-only">
+                    старая цена
+                  </span>
+                  199 ₴
+                </span>
                 <div class="rating">
+                  <span class="sr-only">рейтинг</span>
                   <span class="rating__counter">4.5</span>
                   <div class="rating__star" data-rateyo-rating="4.5"></div>
                 </div>
@@ -954,9 +1090,20 @@
               </h3>
               <div class="stock__product-wrapper">
                 <span class="available">В НАЛИЧИИ</span>
-                <span class="stock__new-price new-price">99₴</span>
-                <span class="stock__old-price old-price">199 ₴</span>
+                <span class="stock__new-price new-price">
+                  <span class="sr-only">
+                    новая цена
+                  </span>
+                  99₴
+                </span>
+                <span class="stock__old-price old-price">
+                  <span class="sr-only">
+                    старая цена
+                  </span>
+                  199 ₴
+                </span>
                 <div class="rating">
+                  <span class="sr-only">рейтинг</span>
                   <span class="rating__counter">4.5</span>
                   <div class="rating__star" data-rateyo-rating="4.5"></div>
                 </div>
@@ -974,9 +1121,20 @@
               </h3>
               <div class="stock__product-wrapper">
                 <span class="available">В НАЛИЧИИ</span>
-                <span class="stock__new-price new-price">99₴</span>
-                <span class="stock__old-price old-price">199 ₴</span>
+                <span class="stock__new-price new-price">
+                  <span class="sr-only">
+                    новая цена
+                  </span>
+                  99₴
+                </span>
+                <span class="stock__old-price old-price">
+                  <span class="sr-only">
+                    старая цена
+                  </span>
+                  199 ₴
+                </span>
                 <div class="rating">
+                  <span class="sr-only">рейтинг</span>
                   <span class="rating__counter">4.5</span>
                   <div class="rating__star" data-rateyo-rating="4.5"></div>
                 </div>
@@ -985,25 +1143,16 @@
           </li>
         </ul>
       </div>
-      <button class="stock__btn btn" type="button">Показать еще</button>
+      <a class="stock__btn btn" href="catalog.html">Показать еще</a>
     </div>
   </div>
   <div class="brands">
+    <span class="sr-only">бренды которые есть на сайте</span>
     <div class="container">
       <ul class="brands__content">
         <li class="brands__item">
           <a class="brands__link" href="#">
             <img src="images/brands/1.svg" width="80" alt="Бренд">
-         </a>
-       </li>
-        <li class="brands__item">
-          <a class="brands__link" href="#">
-            <img src="images/brands/1.svg" width="80" alt="Бренд">
-        </a>
-      </li>
-        <li class="brands__item">
-          <a class="brands__link" href="#">
-            <img src="images/brands/1.svg" width="80" alt="Бренд">
           </a>
         </li>
         <li class="brands__item">
@@ -1019,8 +1168,18 @@
         <li class="brands__item">
           <a class="brands__link" href="#">
             <img src="images/brands/1.svg" width="80" alt="Бренд">
-        </a>
-          </li>
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <img src="images/brands/1.svg" width="80" alt="Бренд">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <img src="images/brands/1.svg" width="80" alt="Бренд">
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -1044,13 +1203,12 @@
               Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись, пока всё не разобрали!
             </p>
           </div>
-          <time class="news__time">
+          <time class="news__time" datetime="2015-07-15">
             <span class="news__time-mounth">ИЮЛЬ</span>
             <span class="news__time-day">15</span>
           </time>
         </a>
       </li>
-
       <li class="news__item">
         <a class="news__link" href="№">
           <img class="news__img" src="images/news/1.jpg" width="410" height="240" alt="Картина на тему новости">
@@ -1059,7 +1217,7 @@
               Шикарнейший выбор манго в нашем онлайн-маркете
             </p>
           </div>
-          <time class="news__time">
+          <time class="news__time" datetime="2015-05-07">
             <span class="news__time-mounth">МАЙ</span>
             <span class="news__time-day">07</span>
           </time>
@@ -1073,7 +1231,7 @@
               Всё, что вы хотели знать о папайя
             </p>
           </div>
-          <time class="news__time">
+          <time class="news__time" datetime="2015-02-20">
             <span class="news__time-mounth">ФЕВРФЛЬ</span>
             <span class="news__time-day">20</span>
           </time>
@@ -1187,11 +1345,13 @@
       </span>
       <div class="footer-bottom__cards">
         <a class="footer-bottom__link" href="#">
+          <span class="sr-only">оплата mastercard</span>
           <svg width="93" height="29">
             <use xlink:href="images/sprite.svg#visa"></use>
           </svg>
         </a>
         <a class="footer-bottom__link" href="#">
+          <span class="sr-only">оплата Visa</span>
           <svg width="49" height="29">
             <use xlink:href="images/sprite.svg#mastercard"></use>
           </svg>

@@ -1,19 +1,19 @@
 .advantages {
 
-  &__list{
-width: 100%;
-  padding: 50px 15px 30px 15px;
-  display: flex;
-  justify-content: center;
-  background-color: #f6f6f6;
+  &__list {
+    width: 100%;
+    padding: 50px 15px 30px 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
 
-  @media (max-width: $lg) {
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: none;
+    @media (max-width: $lg) {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: none;
+    }
   }
-  }
-  
+
   .scooter::before {
     background-image: url(.././images/icons/scooter.svg);
   }

@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/images/favicon/favicon.ico" type="svg+xml">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" href="images/favicon/favicon.ico" type="svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.min.css">
@@ -29,22 +29,24 @@
       <ul class="menu-mob__client">
         <li class="menu-mob__client-item">
           <a class="menu-mob__link enter" href="#">
+            <span class="sr-only">вход в аккаунт</span>
             Вход
           </a>
         </li>
         <li class="menu-mob__client-item">
           <a class="menu-mob__link registration" href="#">
+            <span class="sr-only">регистрация на сайте</span>
             Регистрация
           </a>
         </li>
       </ul>
-      <button class="header__btn" type="button">
+      <button class="header__btn header__btn--mob" type="button">
         <svg width="24" height="17">
           <use xlink:href="../images/sprite.svg#header-btn-decor"></use>
         </svg>
         Каталог товаров
       </button>
-      <ul class="header__catalog-list">
+      <ul class="header__catalog-list header__catalog-list--mob ">
         <li class="header__catalog-item header__catalog-item--mob">
           <a class="header__catalog-link header__catalog-link--mob" href="#">
             Овощи и фрукты
@@ -122,6 +124,7 @@
         <ul class="socials">
           <li class="socials__item">
             <a class="socials__link" href="#">
+              <span class="sr-only">ссылка на фейсбук</span>
               <svg width="31" height="32">
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
@@ -129,6 +132,7 @@
           </li>
           <li class="socials__item">
             <a class="socials__link" href="#">
+              <span class="sr-only">ссылка на телеграм ютуб</span>
               <svg width="31" height="32">
                 <use xlink:href="images/sprite.svg#youtube"></use>
               </svg>
@@ -136,6 +140,7 @@
           </li>
           <li class="socials__item">
             <a class="socials__link" href="#">
+              <span class="sr-only">ссылка на телеграм</span>
               <svg width="31" height="32">
                 <use xlink:href="images/sprite.svg#telegram"></use>
               </svg>
@@ -143,6 +148,7 @@
           </li>
           <li class="socials__item">
             <a class="socials__link" href="#">
+              <span class="sr-only">ссылка на инстаграм</span>
               <svg width="31" height="32">
                 <use xlink:href="images/sprite.svg#instagram"></use>
               </svg>
@@ -198,6 +204,7 @@
     <div class="container">
       <div class="header-top__content">
         <button class="burger-menu" type="button">
+          <span class="sr-only">открыть меню</span>
           <span class="burger-menu__span"></span>
         </button>
         <ul class="header-top__list">
@@ -319,6 +326,7 @@
         </ul>
       </div>
       <form class="header__form">
+        <span class="sr-only">поиск товаров на сайте</span>
         <button class="header__input-btn--search" type="submit">
           <svg width="20px" height="20px">
             <use xlink:href="images/sprite.svg#search"></use>
@@ -332,6 +340,7 @@
       <ul class="user-nav">
         <li class="user-nav__item">
           <a class="user-nav__link search" href="#">
+            <span class="sr-only">открыть поиск по сайту</span>
             <svg width="32" height="28">
               <use xlink:href="images/sprite.svg#search"></use>
             </svg>
@@ -339,6 +348,7 @@
         </li>
         <li class="user-nav__item">
           <a class="user-nav__link user" href="#">
+            <span class="sr-only">перейти в личный кабинет</span>
             <svg width="32" height="28">
               <use xlink:href="images/sprite.svg#user-link"></use>
             </svg>
@@ -346,6 +356,7 @@
         </li>
         <li class="user-nav__item">
           <a class="user-nav__link favorite" href="#">
+            <span class="sr-only">избранные товары</span>
             <svg width="32" height="28">
               <use xlink:href="images/sprite.svg#favorite"></use>
             </svg>
@@ -354,6 +365,7 @@
         </li>
         <li class="user-nav__item">
           <a class="user-nav__link cart" href="#">
+            <span class="sr-only">корзина товаров</span>
             <svg width="32" height="28">
               <use xlink:href="images/sprite.svg#cart"></use>
             </svg>
@@ -366,7 +378,7 @@
 </header>
 
 <main class="main">
-  <section class="breadcrumbs">
+  <div class="breadcrumbs">
   <div class="container">
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
@@ -374,14 +386,19 @@
           Главная
         </a>
       </li>
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link">
-        Каталог товаров
-        </a>
-      </li>
+
+      
+      
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            Каталог товаров
+          </a>
+        </li>
+      
+
     </ul>
   </div>
-</section>
+</div>
   <section class="catalog section">
   <div class="container">
     <h1 class="catalog__title ">
@@ -498,9 +515,11 @@
       </div>
       <div class="catalog-content">
         <div class="catalog-content__filters">
-          <button class="catalog-content__filters-btn open-filters" type="button"></button>
+          <button class="catalog-content__filters-btn open-filters" type="button">
+            <span class="sr-only">открыть фильтры</span>
+          </button>
           <form class="catalog-content__form" action="#">
-            <select class="catalog-content__select-name  select-style">
+            <select class="catalog-content__select-name select-style">
               <option value="">По названию</option>
               <option value="">По популярности</option>
               <option value="">Сначала дешевые</option>
@@ -516,11 +535,13 @@
             </select>
           </form>
           <button class="catalog-content__filters-btn double" type="button">
+            <span class="sr-only">выстроить товары в две колонки</span>
             <svg width="35" height="35">
               <use xlink:href="images/sprite.svg#filter-btn-1"></use>
             </svg>
           </button>
           <button class="catalog-content__filters-btn catalog-content__filters-btn--active triple" type="button">
+            <span class="sr-only">выстроить товары в три колонки</span>
             <svg width="35" height="35">
               <use xlink:href="images/sprite.svg#filter-btn-2"></use>
             </svg>
@@ -534,11 +555,12 @@
                 <span class="discount">-50%</span>
               </div>
               <button class="catalog-card__top-btn" type="button">
+                <span class="sr-only">добавить в избранное</span>
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#favorite"></use>
                 </svg>
               </button>
-              <a class="catalog-card__link" href="#">
+              <a class="catalog-card__link" href="card.html">
                 <img class="catalog-card__img" width="300" height="225" src="images/catalog/1.png" alt="Товар">
                 <div class="catalog-card__link--hover">
                   <svg width="32" height="28">
@@ -550,6 +572,7 @@
                 <div class="catalog-card__wraper-top">
                   <span class="available">В наличии</span>
                   <div class="rating">
+                    <span class="sr-only">рейтинг</span>
                     <span class="rating__counter">4.5</span>
                     <div class="rating__star" data-rateyo-rating="4.5"></div>
                   </div>
@@ -557,10 +580,21 @@
                 <h3 class="catalog-card__title">Ананас, 1кг</h3>
                 <div class="catalog-card__bottom">
                   <div class="catalog-card__price">
-                    <span class="catalog-card__old-price old-price">199 ₴</span>
-                    <span class="catalog-card__new-price new-price">99 ₴</span>
+                    <span class="catalog-card__old-price old-price">
+                      <span class="sr-only">
+                        сатаря цена
+                      </span>
+                      199 ₴
+                    </span>
+                    <span class="catalog-card__new-price new-price">
+                      <span class="sr-only">
+                        новая цена
+                      </span>
+                      99 ₴
+                    </span>
                   </div>
                   <button class="catalog-card__bottom-btn" type="button">
+                    <span class="sr-only">добавить в корзину</span>
                     <svg width="16" height="16">
                       <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
@@ -572,11 +606,12 @@
           <li class="catalog-content__item">
             <article class="catalog-card">
               <button class="catalog-card__top-btn" type="button">
+                <span class="sr-only">добавить в избранное</span>
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#favorite"></use>
                 </svg>
               </button>
-              <a class="catalog-card__link" href="#">
+              <a class="catalog-card__link" href="card.html">
                 <img class="catalog-card__img" width="300" height="225" src="images/catalog/2.png" alt="Товар">
                 <div class="catalog-card__link--hover">
                   <svg width="32" height="28">
@@ -588,6 +623,7 @@
                 <div class="catalog-card__wraper-top">
                   <span class="available">В наличии</span>
                   <div class="rating">
+                    <span class="sr-only">рейтинг</span>
                     <span class="rating__counter">4.5</span>
                     <div class="rating__star" data-rateyo-rating="4.5"></div>
                   </div>
@@ -595,9 +631,15 @@
                 <h3 class="catalog-card__title">Лимон, 1кг</h3>
                 <div class="catalog-card__bottom">
                   <div class="catalog-card__price">
-                    <span class="catalog-card__new-price new-price">49 ₴</span>
+                    <span class="catalog-card__new-price new-price">
+                      <span class="sr-only">
+                        новая цена
+                      </span>
+                      49 ₴
+                    </span>
                   </div>
                   <button class="catalog-card__bottom-btn" type="button">
+                    <span class="sr-only">добавить в корзину</span>
                     <svg width="16" height="16">
                       <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
@@ -609,14 +651,15 @@
           <li class="catalog-content__item">
             <article class="catalog-card">
               <div class="catalog-card__badges badges">
-                <span class="available">Хит</span>
+                <span class="bestseller">Хит</span>
               </div>
               <button class="catalog-card__top-btn" type="button">
+                <span class="sr-only">добавить в избранное</span>
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#favorite"></use>
                 </svg>
               </button>
-              <a class="catalog-card__link" href="#">
+              <a class="catalog-card__link" href="card.html">
                 <img class="catalog-card__img" width="300" height="225" src="images/catalog/3.png" alt="Товар">
                 <div class="catalog-card__link--hover">
                   <svg width="32" height="28">
@@ -628,6 +671,7 @@
                 <div class="catalog-card__wraper-top">
                   <span class="available">В наличии</span>
                   <div class="rating">
+                    <span class="sr-only">рейтинг</span>
                     <span class="rating__counter">4.5</span>
                     <div class="rating__star" data-rateyo-rating="4.5"></div>
                   </div>
@@ -635,9 +679,15 @@
                 <h3 class="catalog-card__title">Питахайя красная с белой мякотью, 1шт</h3>
                 <div class="catalog-card__bottom">
                   <div class="catalog-card__price">
-                    <span class="catalog-card__new-price new-price">101 ₴</span>
+                    <span class="catalog-card__new-price new-price">
+                      <span class="sr-only">
+                        новая цена
+                      </span>
+                      101 ₴
+                    </span>
                   </div>
                   <button class="catalog-card__bottom-btn" type="button">
+                    <span class="sr-only">добавить в корзину</span>
                     <svg width="16" height="16">
                       <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
@@ -649,14 +699,15 @@
           <li class="catalog-content__item">
             <article class="catalog-card">
               <div class="catalog-card__badges badges">
-                <span class="available">Хит</span>
+                <span class="bestseller">Хит</span>
               </div>
               <button class="catalog-card__top-btn" type="button">
+                <span class="sr-only">добавить в избранное</span>
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#favorite"></use>
                 </svg>
               </button>
-              <a class="catalog-card__link" href="#">
+              <a class="catalog-card__link" href="card.html">
                 <img class="catalog-card__img" width="300" height="225" src="images/catalog/5.png" alt="Товар">
                 <div class="catalog-card__link--hover">
                   <svg width="32" height="28">
@@ -668,6 +719,7 @@
                 <div class="catalog-card__wraper-top">
                   <span class="not-available">Нет в наличии</span>
                   <div class="rating">
+                    <span class="sr-only">рейтинг</span>
                     <span class="rating__counter">4.5</span>
                     <div class="rating__star" data-rateyo-rating="4.5"></div>
                   </div>
@@ -675,9 +727,15 @@
                 <h3 class="catalog-card__title">Морковь молодая с бабушкиной грядки, 1кг</h3>
                 <div class="catalog-card__bottom">
                   <div class="catalog-card__price">
-                    <span class="catalog-card__new-price new-price">19 ₴</span>
+                    <span class="catalog-card__new-price new-price">
+                      <span class="sr-only">
+                        новая цена
+                      </span>
+                      19 ₴
+                    </span>
                   </div>
                   <button class="catalog-card__bottom-btn" type="button">
+                    <span class="sr-only">добавить в корзину</span>
                     <svg width="16" height="16">
                       <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
@@ -692,11 +750,12 @@
                 <span class="discount">-30%</span>
               </div>
               <button class="catalog-card__top-btn" type="button">
+                <span class="sr-only">добавить в избранное</span>
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#favorite"></use>
                 </svg>
               </button>
-              <a class="catalog-card__link" href="#">
+              <a class="catalog-card__link" href="card.html">
                 <img class="catalog-card__img" width="300" height="225" src="images/catalog/6.png" alt="Товар">
                 <div class="catalog-card__link--hover">
                   <svg width="32" height="28">
@@ -708,17 +767,29 @@
                 <div class="catalog-card__wraper-top">
                   <span class="available">В наличии</span>
                   <div class="rating">
+                    <span class="sr-only">рейтинг</span>
                     <span class="rating__counter">4.5</span>
                     <div class="rating__star" data-rateyo-rating="4.5"></div>
                   </div>
                 </div>
-                <h3 class="catalog-card__title">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...</h3>
+                <h3 class="catalog-card__title">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+                  безалкогольн...</h3>
                 <div class="catalog-card__bottom">
                   <div class="catalog-card__price">
-                    <span class="catalog-card__old-price old-price">49 ₴</span>
-                    <span class="catalog-card__new-price new-price">19 ₴</span>
+                    <span class="catalog-card__old-price old-price"><span class="sr-only">
+                      старая цена
+                    </span>
+                    49 ₴
+                  </span>
+                    <span class="catalog-card__new-price new-price">
+                      <span class="sr-only">
+                        новая цена
+                      </span>
+                      19 ₴
+                    </span>
                   </div>
                   <button class="catalog-card__bottom-btn" type="button">
+                    <span class="sr-only">добавить в корзину</span>
                     <svg width="16" height="16">
                       <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
@@ -733,11 +804,12 @@
                 <span class="new">НОВИНКА</span>
               </div>
               <button class="catalog-card__top-btn" type="button">
+                <span class="sr-only">добавить в избранное</span>
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#favorite"></use>
                 </svg>
               </button>
-              <a class="catalog-card__link" href="#">
+              <a class="catalog-card__link" href="card.html">
                 <img class="catalog-card__img" width="300" height="225" src="images/catalog/7.png" alt="Товар">
                 <div class="catalog-card__link--hover">
                   <svg width="32" height="28">
@@ -749,6 +821,7 @@
                 <div class="catalog-card__wraper-top">
                   <span class="ends">Заканчивается</span>
                   <div class="rating">
+                    <span class="sr-only">рейтинг</span>
                     <span class="rating__counter">4.5</span>
                     <div class="rating__star" data-rateyo-rating="4.5"></div>
                   </div>
@@ -756,10 +829,19 @@
                 <h3 class="catalog-card__title">Кофе с коноплей органический Caffé Salomoni 250г</h3>
                 <div class="catalog-card__bottom">
                   <div class="catalog-card__price">
-                    <span class="catalog-card__old-price old-price">199 ₴</span>
-                    <span class="catalog-card__new-price new-price">99 ₴</span>
+                    <span class="catalog-card__old-price old-price">
+                      <span class="sr-only">
+                        старая цена
+                      </span>199 ₴</span>
+                    <span class="catalog-card__new-price new-price">
+                      <span class="sr-only">
+                        новая цена
+                      </span>
+                      99 ₴
+                    </span>
                   </div>
                   <button class="catalog-card__bottom-btn" type="button">
+                    <span class="sr-only">добавить в корзину</span>
                     <svg width="16" height="16">
                       <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
@@ -775,11 +857,12 @@
                 <span class="discount">-50%</span>
               </div>
               <button class="catalog-card__top-btn" type="button">
+                <span class="sr-only">добавить в избранное</span>
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#favorite"></use>
                 </svg>
               </button>
-              <a class="catalog-card__link" href="#">
+              <a class="catalog-card__link" href="card.html">
                 <img class="catalog-card__img" width="300" height="225" src="images/catalog/8.png" alt="Товар">
                 <div class="catalog-card__link--hover">
                   <svg width="32" height="28">
@@ -791,6 +874,7 @@
                 <div class="catalog-card__wraper-top">
                   <span class="available">В наличии</span>
                   <div class="rating">
+                    <span class="sr-only">рейтинг</span>
                     <span class="rating__counter">4.5</span>
                     <div class="rating__star" data-rateyo-rating="4.5"></div>
                   </div>
@@ -798,10 +882,20 @@
                 <h3 class="catalog-card__title">Перец оранжевый, 1кг</h3>
                 <div class="catalog-card__bottom">
                   <div class="catalog-card__price">
-                    <span class="catalog-card__old-price old-price">199 ₴</span>
-                    <span class="catalog-card__new-price new-price">99 ₴</span>
+                    <span class="catalog-card__old-price old-price">
+                      <span class="sr-only">
+                        старя цена
+                      </span>
+                      199 ₴</span>
+                    <span class="catalog-card__new-price new-price">
+                      <span class="sr-only">
+                        новая цена
+                      </span>
+                      99 ₴
+                    </span>
                   </div>
                   <button class="catalog-card__bottom-btn" type="button">
+                    <span class="sr-only">добавить в корзину</span>
                     <svg width="16" height="16">
                       <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
@@ -813,11 +907,12 @@
           <li class="catalog-content__item">
             <article class="catalog-card">
               <button class="catalog-card__top-btn" type="button">
+                <span class="sr-only">добавить в избранное</span>
                 <svg width="32" height="28">
                   <use xlink:href="images/sprite.svg#favorite"></use>
                 </svg>
               </button>
-              <a class="catalog-card__link" href="#">
+              <a class="catalog-card__link" href="card.html">
                 <img class="catalog-card__img" width="300" height="225" src="images/catalog/4.png" alt="Товар">
                 <div class="catalog-card__link--hover">
                   <svg width="32" height="28">
@@ -829,17 +924,23 @@
                 <div class="catalog-card__wraper-top">
                   <span class="available">В наличии</span>
                   <div class="rating">
+                    <span class="sr-only">рейтинг</span>
                     <span class="rating__counter">4.5</span>
                     <div class="rating__star" data-rateyo-rating="4.5"></div>
                   </div>
                 </div>
                 <h3 class="catalog-card__title">Кетчуп томатный детский органический Bio-Zentrale 500мл,
-                1 шт</h3>
+                  1 шт</h3>
                 <div class="catalog-card__bottom">
                   <div class="catalog-card__price">
-                    <span class="catalog-card__new-price new-price">60 ₴</span>
+                    <span class="catalog-card__new-price new-price">
+                      <span class="sr-only">
+                        новая цена
+                      </span>
+                      60 ₴</span>
                   </div>
                   <button class="catalog-card__bottom-btn" type="button">
+                    <span class="sr-only">добавить в корзину</span>
                     <svg width="16" height="16">
                       <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
@@ -856,6 +957,7 @@
           <ul class="pagination">
             <li class="pagination__item">
               <a class="pagination__arrow" href="#">
+                <span class="sr-only">перейти на следущую страницу с товарами</span>
                 <svg width="24" height="17">
                   <use xlink:href="images/sprite.svg#icon-arrow-left"></use>
                 </svg>
@@ -878,6 +980,7 @@
             </li>
             <li class="pagination__item">
               <a class="pagination__arrow" href="#">
+                <span class="sr-only">перейти на предыдущую страницу с товарами</span>
                 <svg width="24" height="17">
                   <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
                 </svg>
@@ -1023,11 +1126,13 @@
       </span>
       <div class="footer-bottom__cards">
         <a class="footer-bottom__link" href="#">
+          <span class="sr-only">оплата mastercard</span>
           <svg width="93" height="29">
             <use xlink:href="images/sprite.svg#visa"></use>
           </svg>
         </a>
         <a class="footer-bottom__link" href="#">
+          <span class="sr-only">оплата Visa</span>
           <svg width="49" height="29">
             <use xlink:href="images/sprite.svg#mastercard"></use>
           </svg>
